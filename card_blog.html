@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+
+        body {
+            margin: 0;
+            font-family: "MarkPro Bold";
+            background-color: #0a0a0a;
+            margin-bottom: 30px;
+        }
+
+        @font-face {
+            font-family: "MarkPro Bold";
+            src: url("./MarkPro-Bold.otf");
+        }
+
+        address,
+        blockquote,
+        body,
+        button,
+        code,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        html,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        table,
+        td,
+        textarea,
+        th,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: #0a0a0a;
+        }
+
+        /* --TEMPORAL */
+        @media screen and (min-width: 1280px) {
+            .card {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+        }
+
+        /*  */
+
+        /* PADING_CARD */
+        @media screen and (max-width: 960px){
+.card__padding {
+    padding-top: 30px
+;
+}}
+        .card__padding {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .card__padding {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        /*  */
+
+        @media screen and (min-width: 1280px) {
+            .card__wrapper {
+                display: flex;
+                margin-bottom: 0;
+            }
+        }
+
+
+
+
+        .card__hero-wrapper {
+            position: relative;
+            display: block;
+            margin-bottom: 20px;
+            transition: .15s ease-out;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .card__hero-wrapper {
+                flex: 1 1 60%;
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .card__hero {
+            display: block;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .card__article-card,
+        .card__hero {
+            background-color: rgba(128, 128, 128, .2);
+        }
+
+        .card__hero .responsive-media {
+            box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .responsive-media {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 100%;
+            text-align: left;
+            width: 100%;
+        }
+
+        .card__hero .responsive-media::before {
+            content: '';
+            border-radius: 8px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background: linear-gradient(200deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 65%);
+        }
+
+        img,
+        object {
+            vertical-align: bottom;
+            border: 0;
+        }
+
+        .responsive-media>img {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .card__hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            z-index: 2;
+        }
+
+        @media screen and (min-width: 400px) {
+            .card__hero-content {
+                padding: 1.5rem;
+            }
+        }
+
+        .card__hero-content h3 {
+            font-size: 1.125rem;
+            line-height: 1.2;
+            margin-bottom: 4px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card h3 {
+            color: #f9f9f9;
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__hero-content h3 {
+                font-size: 1.938rem;
+            }
+        }
+
+        .card__category {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-size: .70rem;
+            color: rgba(101, 100, 98, .9);
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__category {
+                font-size: .918rem;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .card__hero-content h3 {
+                font-size: 1.938rem;
+            }
+        }
+
+
+        .game-badge {
+            width: 40px;
+            height: 40px;
+            background-color: #141212;
+            border-radius: 50%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .card__badge {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+
+        .card__hero .card__badge {
+            left: 16px;
+            top: 16px;
+        }
+
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+        }
+
+        .icon svg {
+            vertical-align: top;
+            height: auto;
+        }
+
+        /*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*  */
+
+        .card__articles {
+            display: grid;
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .card__articles {
+                grid-template-columns: 1fr;
+                -ms-flex: 1 1 40%;
+                flex: 1 1 40%;
+            }
+        }
+
+        .card__article {
+            list-style: none;
+            margin: 0;
+            transition: .25s ease-out;
+            box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
+            border-radius: 8px;
+
+        }
+
+        .card__article-card {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            min-height: 85px;
+        }
+
+        .card__article-card:hover {
+            animation: bg-fade-in .2s ease-out forwards;
+            background-color: #2E2E2E;
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__article-card {
+                min-height: 120px;
+            }
+        }
+
+        .text-button,
+        a {
+            color: #d1363a;
+            text-decoration: none;
+        }
+
+        .card__article-title-wrapper {
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            margin-right: 120px;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__article-title-wrapper {
+                padding: 1rem 0.5rem 1rem 1.625rem;
+                margin-right: 200px;
+            }
+        }
+
+        .card__article-card h3 {
+            font-size: 1.125rem;
+            line-height: 1.2;
+            margin-bottom: 4px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card__article-image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 120px;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 8px 8px 0;
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__article-image {
+                width: 200px;
+            }
+        }
+
+        .card__badge--top-right {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            .card__badge--top-right {
+                position: absolute;
+                right: 8px;
+                top: 8px;
+            }
+        }
+
+        .game-badge--small {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media screen and (min-width: 550px) {
+            .game-badge--small {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .game-badge--small .icon {
+            width: 14.4px !important;
+            height: 14.4px !important;
+            line-height: 14.4px !important;
+        }
+
+        @media screen and (min-width: 550px) {
+            .game-badge--small .icon {
+                width: 19.2px !important;
+                height: 19.2px !important;
+                line-height: 19.2px !important;
+            }
+
+        }
+
+        .icon svg {
+            vertical-align: top;
+            height: auto;
+        }
+
+        @media screen and (min-width: 550px) {
+            .card__article-title-wrapper {
+                padding: 1rem .5rem 1rem 1.625rem;
+            }
+        }
+
+        .card__article-card:hover.card__article-card:hover::after,
+        .card__hero:hover.card__hero:hover::after {
+            opacity: 1;
+        }
+
+        .card__article-card:active::after,
+        .card__hero:active::after {
+            background-color: #fff;
+        }
+
+        .card__article-card::after,
+        .card__hero::after {
+            border: 0;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            --angle: -90deg;
+            -webkit-animation: 8s rotate linear infinite;
+            animation: 8s rotate linear infinite;
+            background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .4));
+            background: conic-gradient(from var(--angle), rgba(255, 255, 255, .8), rgba(255, 255, 255, .2), rgba(255, 255, 255, .8));
+        }
+
+        .card__article-card::after,
+        .card__hero::after {
+            content: '';
+            border-radius: 12px;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            padding: 2px;
+            color: #f9f9f9;
+            display: block;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            transition: opacity .1s ease-out;
+            z-index: 4;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+ 
+    <div class="container">
+        <div class="card">
+            <div class="card__padding">
+                <div class="card__wrapper">
+                    <div class="card__hero-wrapper">
+                        <a href="#" class="card__hero">
+                            <div class="responsive-media" style="padding-bottom:50%">
+                                <img alt=""
+                                    src="https://www.riotgames.com/darkroom/1000/0a8b4600c88cc7e4bd392b90405f892a:aa7ab93ba3d3e8a04ce6d43862b1b73f/11-20-embargo-riot-riotxarcane-phase02-4k.jpg">
+                                <div class="card__hero-content">
+                                    <h3>RiotX Arcane: Until Next Time</h3>
+                                    <div class="card__category">News</div>
+                                </div>
+                                <div class="game-badge card__badge game-badge--undefined">
+                                    <span class="icon" aria-hidden="true"
+                                        style="width:24px;height:24px;line-height:24px"><svg viewBox="0 0 24 24"
+                                            fill="none">
+                                            <path
+                                                d="M12.91 0L21 22h-3.893c-1.697-3.478-3.183-4.725-5.258-4.725-2.076 0-3.56 1.247-5.243 4.725H3l8.092-22h1.817zm2.136 16.74l-3.167-8.856-3.227 8.855c1.182-.42 2.287-.594 3.227-.594.925 0 2 .174 3.167.594z"
+                                                fill="#BA8A63">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+
+
+
+
+                    <ul class="card__articles">
+                        <li class="card__article">
+                            <a class="card__article-card" href="#">
+                                <div class="card__article-title-wrapper">
+                                    <h3 class="card__article-title">
+                                        Project L /dev: Finding our Game
+                                    </h3>
+                                    <div class="card__category">News</div>
+                                </div>
+                                <div class="card__article-image"
+                                    style="background-image:url(https://www.riotgames.com/darkroom/500/1ebd5a4795ff7c0ab3452a8fb66d62ec:7ddf9d0daade174c1fd410add6fbbc60/xp1-yt-thumbnails-r21-projectl-textless.jpg)">
+                                </div>
+                                <div class="game-badge card__badge--top-right game-badge--small">
+                                    <span class="icon" aria-hidden="true"
+                                        style="width:24px;height:24px;line-height:24px">
+                                        <svg viewBox="0 0 19.2 19.2">
+                                            <g fill="#fcfcfc">
+                                                <path
+                                                    d="M1.758 6.216l10.014-4.7 5.86 1.415-1.046 10.355h-2.972l-.556-7.544-.314.1-.53 7.446H9.969L8.896 7.024l-.314.1.076 6.162H6.539L5.31 8.128l-.314.1.353 5.061H3.306zM9.317 14.288l.741 1.893 6.093 1.5.321-3.03z">
+                                                </path>
+                                            </g>
+                                            <path fill="none" d="M0 0h19.2v19.2H0z"></path>
+                                        </svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card__article">
+                            <a class="card__article-card" href="#">
+                                <div class="card__article-title-wrapper">
+                                    <h3 class="card__article-title">
+                                        Project L /dev: Finding our Game
+                                    </h3>
+                                    <div class="card__category">News</div>
+                                </div>
+                                <div class="card__article-image"
+                                    style="background-image:url(https://www.riotgames.com/darkroom/500/1ebd5a4795ff7c0ab3452a8fb66d62ec:7ddf9d0daade174c1fd410add6fbbc60/xp1-yt-thumbnails-r21-projectl-textless.jpg)">
+                                </div>
+                                <div class="game-badge card__badge--top-right game-badge--small">
+                                    <span class="icon" aria-hidden="true"
+                                        style="width:24px;height:24px;line-height:24px">
+                                        <svg viewBox="0 0 19.2 19.2">
+                                            <g fill="#fcfcfc">
+                                                <path
+                                                    d="M1.758 6.216l10.014-4.7 5.86 1.415-1.046 10.355h-2.972l-.556-7.544-.314.1-.53 7.446H9.969L8.896 7.024l-.314.1.076 6.162H6.539L5.31 8.128l-.314.1.353 5.061H3.306zM9.317 14.288l.741 1.893 6.093 1.5.321-3.03z">
+                                                </path>
+                                            </g>
+                                            <path fill="none" d="M0 0h19.2v19.2H0z"></path>
+                                        </svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card__article">
+                            <a class="card__article-card" href="#">
+                                <div class="card__article-title-wrapper">
+                                    <h3 class="card__article-title">
+                                        Project L /dev: Finding our Game
+                                    </h3>
+                                    <div class="card__category">News</div>
+                                </div>
+                                <div class="card__article-image"
+                                    style="background-image:url(https://www.riotgames.com/darkroom/500/1ebd5a4795ff7c0ab3452a8fb66d62ec:7ddf9d0daade174c1fd410add6fbbc60/xp1-yt-thumbnails-r21-projectl-textless.jpg)">
+                                </div>
+                                <div class="game-badge card__badge--top-right game-badge--small">
+                                    <span class="icon" aria-hidden="true"
+                                        style="width:24px;height:24px;line-height:24px">
+                                        <svg viewBox="0 0 19.2 19.2">
+                                            <g fill="#fcfcfc">
+                                                <path
+                                                    d="M1.758 6.216l10.014-4.7 5.86 1.415-1.046 10.355h-2.972l-.556-7.544-.314.1-.53 7.446H9.969L8.896 7.024l-.314.1.076 6.162H6.539L5.31 8.128l-.314.1.353 5.061H3.306zM9.317 14.288l.741 1.893 6.093 1.5.321-3.03z">
+                                                </path>
+                                            </g>
+                                            <path fill="none" d="M0 0h19.2v19.2H0z"></path>
+                                        </svg></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card__article">
+                            <a class="card__article-card" href="#">
+                                <div class="card__article-title-wrapper">
+                                    <h3 class="card__article-title">
+                                        Project L /dev: Finding our Game
+                                    </h3>
+                                    <div class="card__category">News</div>
+                                </div>
+                                <div class="card__article-image"
+                                    style="background-image:url(https://www.riotgames.com/darkroom/500/1ebd5a4795ff7c0ab3452a8fb66d62ec:7ddf9d0daade174c1fd410add6fbbc60/xp1-yt-thumbnails-r21-projectl-textless.jpg)">
+                                </div>
+                                <div class="game-badge card__badge--top-right game-badge--small">
+                                    <span class="icon" aria-hidden="true"
+                                        style="width:24px;height:24px;line-height:24px">
+                                        <svg viewBox="0 0 19.2 19.2">
+                                            <g fill="#fcfcfc">
+                                                <path
+                                                    d="M1.758 6.216l10.014-4.7 5.86 1.415-1.046 10.355h-2.972l-.556-7.544-.314.1-.53 7.446H9.969L8.896 7.024l-.314.1.076 6.162H6.539L5.31 8.128l-.314.1.353 5.061H3.306zM9.317 14.288l.741 1.893 6.093 1.5.321-3.03z">
+                                                </path>
+                                            </g>
+                                            <path fill="none" d="M0 0h19.2v19.2H0z"></path>
+                                        </svg></span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

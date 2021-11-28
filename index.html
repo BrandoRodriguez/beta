@@ -83,17 +83,18 @@
     padding-top: 30px
 ;
 }}
+@media screen and (max-width: 767px){
         .card__padding {
             padding-left: 20px;
             padding-right: 20px;
-        }
+        }}
 
-        @media screen and (min-width: 1280px) {
+        /* @media screen and (min-width: 1280px) {
             .card__padding {
                 padding-left: 80px;
                 padding-right: 80px;
             }
-        }
+        } */
 
         /*  */
 
@@ -468,6 +469,280 @@
         }
 
         
+
+        /* -------------------------------------------------------------------------- */
+        .portfolio-section {
+            padding: 120px 0 191px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+
+
+        /* GRID DE CONTAINER */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1380px;
+            }
+        }
+
+        @media (max-width: 1399px) {
+            .portfolio-section .container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .container {
+                max-width: 940px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-section .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .portfolio-section .container {
+                max-width: 540px;
+            }
+        }
+
+
+
+
+
+
+
+        /*  */
+
+        @media (max-width: 767px) {
+            .portfolio-section .portfolio-wrapper {
+                padding: 0 20px;
+            }
+        }
+
+        .portfolio-section .single-portfolio {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-section .single-portfolio {
+                display: block;
+                margin-bottom: 50px;
+            }
+        }
+
+        .portfolio-section .single-portfolio .img-area {
+            background-color: rgba(128, 128, 128, .2);
+            width: 60%;
+            padding: 70px;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .portfolio-section .single-portfolio .img-area::before {
+            content: '';
+            border-radius: 8px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background: linear-gradient(200deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 65%);
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .single-portfolio .img-area {
+                background-color: rgba(128, 128, 128, .2);
+                width: 55%;
+                padding: 45px;
+                position: relative;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .portfolio-section .single-portfolio .img-area {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-section .single-portfolio .img-area {
+                width: 100%;
+            }
+        }
+
+
+
+        /* CONTADOR */
+
+        .portfolio-section .single-portfolio .img-area .item-count {
+            display: block;
+            position: absolute;
+            right: -100px;
+            top: 5px;
+            font-size: 120px;
+            line-height: 0.9;
+            font-weight: 900;
+            color: #333;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #333;
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        @media (max-width: 991px) {
+            .portfolio-section .single-portfolio .img-area .item-count {
+                right: 10px;
+                top: inherit;
+                bottom: -40px;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .single-portfolio .img-area .item-count {
+                right: -47px;
+                top: 10px;
+                font-size: 80px;
+                display: none;
+            }
+        }
+
+        .portfolio-section .single-portfolio .img-area img {
+            box-shadow: 0 0 27px 0px rgba(0, 0, 0, 0.7);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            border-style: none;
+            border-radius: 8px;
+        }
+
+
+        /*  */
+        .portfolio-section .single-portfolio .portfolio-content {
+            width: 40%;
+            padding-left: 70px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .single-portfolio .portfolio-content {
+                width: 45%;
+                padding-left: 40px;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .portfolio-section .single-portfolio .portfolio-content {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .portfolio-section .single-portfolio .portfolio-content {
+                width: 100%;
+                padding-left: 0px;
+                margin-top: 30px;
+            }
+        }
+
+
+        .portfolio-section .portfolio-content .portfolio-type {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #D1AC90;
+            letter-spacing: 1px;
+        }
+
+        .portfolio-section .portfolio-content h2 {
+            color: #fffefe;
+            margin-bottom: 28px;
+        }
+
+        .portfolio-section .portfolio-content h2 {
+            font-size: 1.938rem;
+            line-height: 54px;
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .portfolio-content h2 {
+                font-size: 1.125rem;
+                line-height: 44px;
+            }
+        }
+
+
+
+        .portfolio-section .portfolio-content p {
+            color: #ababab;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @media (max-width: 1199px) {
+            .portfolio-section .portfolio-content p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
+        .portfolio-section .portfolio-content .link-default.animated {
+            transition-delay: 1s;
+        }
+
+        .link-default {
+            display: inline-block;
+            color: #fff;
+            margin-top: 37px;
+            text-decoration: none;
+            font-size: 18px;
+            ;
+        }
+
+        .link-default span {
+            height: 40px;
+            width: 40px;
+            background: #D1AC90;
+            border-radius: 100%;
+            display: inline-flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+        }
+
+        .portfolio-section .single-portfolio:nth-child(even) {
+            flex-flow: row-reverse;
+        }
+
+        .portfolio-section .single-portfolio:nth-child(even) .portfolio-content {
+            padding-left: 0;
+            padding-right: 70px;
+        }
+
+
+        .portfolio-section .single-portfolio:nth-child(even) .img-area .item-count {
+            left: -100px;
+            right: inherit;
+        }
     </style>
 </head>
 
@@ -619,7 +894,90 @@
         </div>
     </div>
 
+    <section class="portfolio-section" id="portfolio">
 
+
+
+        <div class="container">
+            <div class="portfolio-wrapper">
+
+
+
+
+                <div class="single-portfolio">
+                    <div class="img-area">
+                        <span class="item-count animate-me animated">01</span>
+                        <img src="https://demo.themecon.net/onlyme/html/images/portfolio11.jpg" alt="portfolio img"
+                            class="animate-me animated">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-type animate-me animated">React Native</span>
+                        <h2 class="animate-me animated">Soft UI PRO React Native</h2>
+                        <p class="animate-me animated">Soft UI React Native is a fully coded app template built over
+                            React Native and Expo. </p>
+                        <a href="#" class="live-view link-default animate-me animated">View Live
+                            <span>
+                                <img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png"
+                                    alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="single-portfolio">
+                    <div class="img-area">
+                        <span class="item-count animate-me animated">02</span>
+                        <img src="https://demo.themecon.net/onlyme/html/images/portfolio12.jpg" alt="portfolio img"
+                            class="animate-me animated">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-type animate-me animated">Event Website</span>
+                        <h2 class="animate-me animated">Staker Event Website</h2>
+                        <p class="animate-me animated">Sed eget sodales tellus. In maximus velit necm euismod vehicula.
+                            Fusce blandit sapien pretiun eros faucibus lobortis a sit amet leo.</p>
+                        <a href="#" class="live-view link-default animate-me animated">View Live
+                            <span>
+                                <img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png"
+                                    alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="single-portfolio">
+                    <div class="img-area">
+                        <span class="item-count animate-me animated">03</span>
+                        <img src="https://demo.themecon.net/onlyme/html/images/portfolio11.jpg" alt="portfolio img"
+                            class="animate-me animated">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-type animate-me animated">React Native</span>
+                        <h2 class="animate-me animated">Soft UI PRO React Native</h2>
+                        <p class="animate-me animated">Soft UI React Native is a fully coded app template built over
+                            React Native and Expo. </p>
+                        <a href="#" class="live-view link-default animate-me animated">View Live
+                            <span>
+                                <img src="https://demo.themecon.net/onlyme/html/images/arrow-right-white.png"
+                                    alt="arrow">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
 
 </body>
 

@@ -251,7 +251,7 @@
 
     .portfolio-section .portfolio-content h2 {
         font-size: 30px;
-        line-height: 54px;
+        line-height: 50px;
     }
 
     @media (max-width: 1199px) {
@@ -355,5 +355,5 @@
     }
 
     .color_tecnologi {
-        color: #7FEBFF;
+        color: #FF5722;
     }

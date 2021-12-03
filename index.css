@@ -316,8 +316,11 @@
         left: -100px;
         right: inherit;
     }
-
-
+ 
+    .portfolio-section .single-portfolio:nth-child(even) .img-area{
+        background: linear-gradient( 
+            -85deg,#434343,#262626);
+    }
     /*  */
 
 

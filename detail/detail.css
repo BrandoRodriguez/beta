@@ -2,7 +2,7 @@
     body {
         font-family: "MarkPro Bold";
         --featured-img: linear-gradient(20deg,#fff,#262626);
-        background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.50),#262626),var(--featured-img);
+        background-image: radial-gradient(0% 0% at top center,rgba(0,0,0,.50),#262626),var(--featured-img);
     }
 
     @font-face {

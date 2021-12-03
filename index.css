@@ -118,7 +118,7 @@
 
     .portfolio-section .single-portfolio .img-area {
     width: 60%;
-    padding: 50px;
+    padding: 40px;
     position: relative;
     border-radius: 8px;
     background: linear-gradient( 85deg,#434343,#262626);
@@ -134,7 +134,7 @@
         left: 0;
         top: 0;
         z-index: 1;
-        background: linear-gradient(200deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 65%);
+        background: linear-gradient(200deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 85%);
     }
 
     @media (max-width: 1199px) {

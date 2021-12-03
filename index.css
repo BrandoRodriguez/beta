@@ -164,9 +164,9 @@
     .portfolio-section .single-portfolio .img-area .item-count {
         display: block;
         position: absolute;
-        right: -100px;
+        right: -110px;
         top: 0px;
-        font-size: 100px;
+        font-size: 120px;
         line-height: 0.9;
         font-weight: 900;
         color: #333;
@@ -250,7 +250,7 @@
     }
 
     .portfolio-section .portfolio-content h2 {
-        font-size: 26px;
+        font-size: 40px;
         line-height: 54px;
     }
 
@@ -313,7 +313,7 @@
 
 
     .portfolio-section .single-portfolio:nth-child(even) .img-area .item-count {
-        left: -100px;
+        left: -110px;
         right: inherit;
     }
  

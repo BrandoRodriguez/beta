@@ -213,7 +213,7 @@
 
     @media screen and (min-width: 550px) {
         .card__category {
-            font-size: .918rem;
+            font-size: 12px;
         }
     }
 
@@ -340,7 +340,7 @@
     }
 
     .card__article-card h3 {
-        font-size: 1.125rem;
+        font-size: 16px;
         line-height: 1.2;
         margin-bottom: 4px;
         display: -webkit-box;

@@ -122,7 +122,6 @@
     position: relative;
     border-radius: 8px;
     background: linear-gradient( 85deg,#434343,#262626);
-    box-shadow: -2rem 0 3rem -2rem #000;
     }
 
     .portfolio-section .single-portfolio .img-area::before {

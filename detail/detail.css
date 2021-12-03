@@ -229,7 +229,7 @@
 
     @media screen and (min-width: 1280px) {
         .card__hero-content h3 {
-            font-size: 1.938rem;
+            font-size: 30px;
         }
     }
 

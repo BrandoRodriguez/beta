@@ -62,6 +62,10 @@ a{
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .img{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .pt-12 {
     padding-top: 2rem;
   }

@@ -1,0 +1,220 @@
+
+    @font-face {
+        font-family: "MarkPro Bold";
+        src: url("../MarkPro-Bold.otf");
+    }
+    body{
+        font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    } 
+    address,
+    blockquote,
+    body,
+    button,
+    code,
+    dd,
+    dl,
+    dt,
+    fieldset,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    html,
+    input,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    table,
+    td,
+    textarea,
+    th,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+a{
+    text-decoration: none;
+}
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+
+
+.bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(15, 15, 17, var(--tw-bg-opacity));
+  }
+  .pb-20 {
+    padding-bottom: 5rem;
+  }
+  .relative {
+    position: relative;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pt-12 {
+    padding-top: 3rem;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  } 
+  .mb-20 {
+    margin-bottom: 5rem;
+  } 
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 1024px){
+.lg\:w-1\/2 {
+    width: 50%;
+}}
+.mb-16 {
+    margin-bottom: 4rem;
+  }
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+.font-bold {
+  font-weight: 700;
+}
+.text-blue-400 {
+    --tw-text-opacity: 1;
+    color: rgba(77, 106, 246, var(--tw-text-opacity));
+}
+.max-w-2xl {
+    max-width: 42rem;
+}
+.mt-12 {
+    margin-top: 3rem;
+}
+.mb-12 {
+    margin-bottom: 3rem;
+}
+.text-6xl {
+    font-size: 2.75rem;
+    line-height: 1;
+}
+@media (min-width: 1536px){
+.\32xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+}
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.font-heading {
+    font-family: "MarkPro Bold";
+}
+@media (min-width: 1536px){
+.\32xl\:mb-24 {
+    margin-bottom: 6rem;
+}}
+@media (min-width: 1024px){
+.lg\:mb-16 {
+    margin-bottom: 4rem;
+}}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgba(211, 211, 212, var(--tw-text-opacity));
+}
+.inline-block {
+    display: inline-block;
+}
+.px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.bg-blue-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 64, 255, var(--tw-bg-opacity));
+}
+.bg-blue-500:hover {
+    background-color:#1739C4;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
+
+@media (max-width: 575px){
+.hero-content {
+    text-align: center;
+}}
+ /*-----MEDIDAS--------*/
+  @media (min-width: 640px) {
+    .container {
+      width: 100%;
+    }
+   }
+    @media (min-width: 640px) {
+      .container {
+        max-width: 640px;
+      }     
+    }
+  
+    @media (min-width: 768px) {
+      .container {
+        max-width: 768px;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .container {
+        max-width: 1024px;
+      }
+    }
+  
+    @media (min-width: 1280px) {
+      .container {
+        max-width: 1280px;
+      }
+    }
+  
+    @media (min-width: 1536px) {
+      .container {
+        max-width: 1536px;
+      }
+    }
+

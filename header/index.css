@@ -185,13 +185,34 @@ a{
 @media (max-width: 575px){
 .hero-content {
     text-align: center;
-}}
+}
+.text-xl {
+  font-size: 1rem;
+}
+.mb-12 {
+  margin-bottom: 1rem;
+}
+.mt-12 {
+  margin-top: 1rem;
+}
+.py-5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-12 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+}
+
+
  /*-----MEDIDAS--------*/
   @media (min-width: 640px) {
     .container {
       width: 100%;
     }
    }
+
     @media (min-width: 640px) {
       .container {
         max-width: 640px;

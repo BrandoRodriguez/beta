@@ -63,7 +63,7 @@ a{
     padding-right: 1rem;
   }
   .pt-12 {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .mx-auto {
     margin-left: auto;
@@ -96,7 +96,7 @@ a{
     width: 50%;
 }}
 .mb-16 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 .text-lg {
     font-size: 1.125rem;
@@ -113,14 +113,14 @@ a{
     max-width: 42rem;
 }
 .mt-12 {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .mb-12 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .text-6xl {
     font-size: 2.75rem;
-    line-height: 0;
+    line-height: 1;
 }
 @media (min-width: 1536px){
 .\32xl\:text-8xl {
@@ -141,7 +141,7 @@ a{
 }}
 @media (min-width: 1024px){
 .lg\:mb-16 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }}
 .text-xl {
     font-size: 1.25rem;
@@ -162,12 +162,16 @@ a{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
+.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
 .bg-blue-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(31, 64, 255, var(--tw-bg-opacity));
+    --tw-bg-opacity: 2;
+    background-color: rgba(209,172,144, var(--tw-bg-opacity));
 }
 .bg-blue-500:hover {
-    background-color:#1739C4;
+    background-color:#c2916c;
 }
 .rounded-full {
     border-radius: 9999px;
@@ -210,7 +214,7 @@ a{
   
     @media (min-width: 1536px) {
       .container {
-        max-width: 1536px;
+        max-width: 1300px;
       }
     }
 

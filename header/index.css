@@ -210,6 +210,7 @@ a{
 .text-lg {
   font-size: 1rem;
   line-height: 1.75rem;
+  box-shadow: 0 10px 45px -10px rgb(186 137 100 / 15%), 0 0 20px -10px rgb(186 137 100 / 35%), 0 10px 30px -10px rgb(186 137 100 / 25%);
 }
 .mb-16 {
   margin-bottom: 2rem;

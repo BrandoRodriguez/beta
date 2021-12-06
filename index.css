@@ -1,8 +1,12 @@
 
     body {
-        font-family: "MarkPro Bold";
-        --featured-img: linear-gradient(20deg,#fff,#262626);
-        background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.50),#262626),var(--featured-img);
+    font-family: "MarkPro Bold";
+    background-color: #262626;
+    background-position: top  center;
+    background-repeat: no-repeat;
+    --featured-img: linear-gradient(180deg,#fff,#262626);
+    background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.75),#262626),var(--featured-img);
+    background-size: 120% 2000px,100% 2000px; 
     }
 
     @font-face {

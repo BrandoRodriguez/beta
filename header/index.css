@@ -1,227 +1,206 @@
 
-    @font-face {
-        font-family: "MarkPro Bold";
-        src: url("../MarkPro-Bold.otf");
-    }
-    body{
-        font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    } 
-    address,
-    blockquote,
-    body,
-    button,
-    code,
-    dd,
-    dl,
-    dt,
-    fieldset,
-    form,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    hr,
-    html,
-    input,
-    legend,
-    li,
-    ol,
-    p,
-    pre,
-    table,
-    td,
-    textarea,
-    th,
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-a{
-    text-decoration: none;
-}
-    *,
-    :after,
-    :before {
-        box-sizing: border-box;
-    }
+    /* background-image: linear-gradient(
+      293deg,#77b0c1 -15.38%,#a483dc 57.43%,#cd77a3 94.88%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; */
+
+          @font-face {
+            font-family: "MarkPro Bold";
+            src: url("../MarkPro-Bold.otf");
+        }
+    
+
+        body {
+            font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        address,
+        blockquote,
+        body,
+        button,
+        code,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        html,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        table,
+        td,
+        textarea,
+        th,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
 
 
-.bg-gray-800 {
-  --featured-img: linear-gradient(20deg,#fff,#262626);
-  background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.50),#262626),var(--featured-img);
-  }
-  .pb-20 {
-    padding-bottom: 5rem;
-  }
-  .relative {
-    position: relative;
-  }
-  .px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .img{
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .pt-12 {
-    padding-top: 2rem;
-  }
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-  .flex {
-    display: flex;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .-mx-4 {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  } 
-  .mb-20 {
-    margin-bottom: 5rem;
-  } 
-  .w-full {
-    width: 100%;
-  }
-  @media (min-width: 1024px){
-.lg\:w-1\/2 {
-    width: 50%;
-}}
-.mb-16 {
-    margin-bottom: 3rem;
-  }
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-.font-bold {
-  font-weight: 700;
-}
-.text-blue-400 {
-    --tw-text-opacity: 1;
-    color: rgba(77, 106, 246, var(--tw-text-opacity));
-}
-.max-w-2xl {
-    max-width: 42rem;
-}
-.mt-12 {
-    margin-top: 2rem;
-}
-.mb-12 {
-    margin-bottom: 2rem;
-}
-.text-6xl {
-    font-size: 2.75rem;
-    line-height: 1;
-}
-@media (min-width: 1536px){
-.\32xl\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-}
-}
-.text-white {
-    --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-.font-heading {
-    font-family: "MarkPro Bold";
-}
-@media (min-width: 1536px){
-.\32xl\:mb-24 {
-    margin-bottom: 6rem;
-}}
-@media (min-width: 1024px){
-.lg\:mb-16 {
-    margin-bottom: 3rem;
-}}
-.text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-}
-.text-gray-100 {
-    --tw-text-opacity: 1;
-    color: rgba(211, 211, 212, var(--tw-text-opacity));
-}
-.inline-block {
-    display: inline-block;
-}
-.px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-.py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-}
-.py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-}
-.bg-blue-500 {
-    --tw-bg-opacity: 2;
-    background-color: rgba(209,172,144, var(--tw-bg-opacity));
-}
-.bg-blue-500:hover {
-    background-color:#c2916c;
-}
-.rounded-full {
-    border-radius: 9999px;
-}
+        .bg-header {
+            background-color: #262626;
+            background-position: top  center;
+            background-repeat: no-repeat;
+            --featured-img: linear-gradient(180deg,#fff,#262626);
+            background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626),var(--featured-img);
+            background-size: 120% 2000px,100% 2000px;   
+        }    
+
+        .font-header {
+            font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .header {
+            display: flex;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            justify-content: space-between;
+            align-items: center;
+            ;
+        }
+
+        .h-img-logo {
+            height: 32px;
+        }
+        
+        .nav-hidden {
+            display: none;
+        }
+
+        .btn {
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 30px;
+            padding-right: 30px;
+            --border-opacity: 1;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-radius: 9999px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .btn:hover {
+            border-color: #fff;
+        }
+
+        .bg-hello{
+            /* position:absolute; */
+            width: 200px;
+            height: 80px;
+            top: 200px;
+            margin-bottom: 25px;            
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(30px);
+            border-radius: 9999px;
+            --border-opacity: 0.5;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-style: solid;
+            border-width: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .emogi{
+            padding: 0 10px;
+        }
+        .saludo{
+            padding: 0 15px 0 0;
+        }
+        .text-xl{
+            font-size: 18px;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* .img-header{
+            top:100px;
+        } */
+       
+        /* Standar */
+        .flex {
+            display: flex;
+        }
+        .block {
+            display: block;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .font-semi-bold {
+            font-weight: 600;
+        }
+
+        .text-lg {
+            font-size: 16px;
+        }
+        .text-sm{
+            font-size: 11px;
+        }
+        
+        .mx-auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .marge-prueba {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .space> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
 
 
-@media (max-width: 575px){
-.hero-content {
-    text-align: center;
-}
-.text-xl {
-  font-size: 1rem;
-}
-.mb-12 {
-  margin-bottom: 1rem;
-}
-.mt-12 {
-  margin-top: 1rem;
-}
-.py-5 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-12 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.text-6xl {
-  font-size: 2rem;
-  line-height: 1;
-}
-.text-lg {
-  font-size: 1rem;
-  line-height: 1.75rem;
-  box-shadow: 0 10px 45px -10px rgb(186 137 100 / 15%), 0 0 20px -10px rgb(186 137 100 / 35%), 0 10px 30px -10px rgb(186 137 100 / 25%);
-}
-.mb-16 {
-  margin-bottom: 2rem;
-}
-}
+        /*  */
+  
 
 
  /*-----MEDIDAS--------*/
-  @media (min-width: 640px) {
-    .container {
-      width: 100%;
+    @media (min-width: 640px) {
+      .container {
+        width: 100%;
     }
    }
 
@@ -236,22 +215,73 @@ a{
         max-width: 768px;
       }
     }
-  
     @media (min-width: 1024px) {
-      .container {
-        max-width: 1024px;
-      }
+        .container {
+            max-width: 1024px;
+          }
+        .header {
+            padding-left: 36px;
+            padding-right: 36px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .h-img-logo {
+            height: 40px;
+        }
+        .hg-img-hero{
+            width:608px;
+        }
+        .btn-hidden {
+            display: none;
+        }
+
+        .nav-hidden {
+            display: block;
+        }
+        .img-header{
+            margin-top: 100px;
+        }
+        .bg-hello{
+            position:absolute;
+            width: 240px;
+            height: 100px;
+            top: 200px;             
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(30px);
+            border-radius: 9999px;
+            --border-opacity: 0.5;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-style: solid;
+            border-width: 1px;
+            margin-left: 210px;
+            margin-right: auto;
+        }
+        .text-xl{
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
     }
-  
+ 
     @media (min-width: 1280px) {
       .container {
         max-width: 1280px;
       }
+      .bg-hello{          
+        margin-left: 600px;
+        margin-top: 100px;
+    }
     }
   
     @media (min-width: 1536px) {
       .container {
         max-width: 1300px;
       }
+      .bg-hello{          
+        margin-left: 600px;
+        margin-top: 100px;
+    }
     }
 

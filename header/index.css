@@ -1,19 +1,14 @@
-
-    /* background-image: linear-gradient(
-      293deg,#77b0c1 -15.38%,#a483dc 57.43%,#cd77a3 94.88%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; */
-
-          @font-face {
+        @font-face {
             font-family: "MarkPro Bold";
             src: url("../MarkPro-Bold.otf");
         }
-    
-
         body {
+            
+            /* --tw-bg-opacity: 1;
+            background-color: rgba(15, 15, 17, var(--tw-bg-opacity)); */
+            background: #313131;;
             font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
-
         address,
         blockquote,
         body,
@@ -49,11 +44,9 @@
         ul {
             list-style: none
         }
-
         a {
             text-decoration: none;
         }
-
         *,
         :after,
         :before {
@@ -62,22 +55,26 @@
         img, video {
             max-width: 100%;
             height: auto;
+        } 
+        .bg-header {              
+            background:
+                radial-gradient(farthest-side at top left,
+                    rgba(0, 194, 255, 0.2),
+                    transparent 1000px),
+                radial-gradient(farthest-corner at bottom right,
+                    rgba(255, 50, 50, 0.2),
+                    transparent 1000px);
         }
-
-
-        .bg-header {
-            background-color: #262626;
-            background-position: top  center;
+        .bg-lineal {
+            position: absolute;
+            background-position: center center;
             background-repeat: no-repeat;
-            --featured-img: linear-gradient(180deg,#fff,#262626);
-            background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.75),#262626),var(--featured-img);
-            background-size: 120% 2000px,100% 2000px;   
-        }    
-
+            background-attachment: fixed;
+            background-size: cover; 
+        }
         .font-header {
             font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
-
         .header {
             display: flex;
             padding-left: 15px;
@@ -88,15 +85,15 @@
             align-items: center;
             ;
         }
-
         .h-img-logo {
             height: 32px;
-        }
-        
+        }        
         .nav-hidden {
             display: none;
         }
-
+        .dk-hero-hidden{
+            display: none;
+        }
         .btn {
             padding-top: 14px;
             padding-bottom: 14px;
@@ -108,11 +105,9 @@
             border-width: 1px;
             border-style: solid;
         }
-
         .btn:hover {
             border-color: #fff;
         }
-
         .bg-hello{
             /* position:absolute; */
             width: 200px;
@@ -140,41 +135,53 @@
             font-weight: 800;
             font-family: 'Poppins', sans-serif;
         }
-        /* .img-header{
-            top:100px;
-        } */
-       
-        /* Standar */
+        .brands{
+            max-width: 56rem;
+            flex-wrap: wrap;
+            margin-top: 5rem;
+            margin-bottom: 5rem;           
+        }
+        .width-brands{
+            width: 20%;    
+        }
+        .img-henry{
+            padding: 0 7px 0 0;
+         }
+        
+        /* <!-- ======================================= 
+        ==CSS Standar==  
+        =======================================--> */
         .flex {
             display: flex;
         }
         .block {
             display: block;
         }
-
         .items-center {
-            align-items: center;
+            align-items: center;           
         }
-
+        .justify-content{
+            justify-content: center;
+        }
         .relative {
             position: relative;
         }
-
         .text-white {
             color: #fff;
         }
-
         .font-semi-bold {
             font-weight: 600;
         }
-
-        .text-lg {
-            font-size: 16px;
+        .text-lg{
+            font-size: 15px;
+            font-family: "MarkPro Bold";
+        }
+        .text-md {
+            font-size: 13px;
         }
         .text-sm{
             font-size: 11px;
-        }
-        
+        }      
         .mx-auto{
             margin-left: auto;
             margin-right: auto;
@@ -199,31 +206,43 @@
 
  /*-----MEDIDAS--------*/
     @media (min-width: 640px) {
-      .container {
-        width: 100%;
-    }
+        .container {
+            width: 100%;
+        }
+        .bk-bash{
+            display: block;
+        }
    }
 
-    @media (min-width: 640px) {
-      .container {
-        max-width: 640px;
-      }     
-    }
-  
     @media (min-width: 768px) {
-      .container {
-        max-width: 768px;
-      }
+        .container {
+            max-width: 768px;
+        }
+        .mb-hero-hidden{
+            display: none;
+        }
+        .dk-hero-hidden{
+            display: block;
+        }
+        .bk-bash{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            
+        }
     }
+
     @media (min-width: 1024px){
         .container {
             max-width: 1024px;
           }
         .header {
-            padding-left: 36px;
-            padding-right: 36px;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 40px;
+            padding-bottom: 0px;
         }
 
         .h-img-logo {
@@ -254,27 +273,93 @@
         .text-xl{
             font-size: 25px;
         }
-
+        .henry {
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 70px;
+            top: 0;
+        }
+        .youtube{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 0px;
+            top: 80px;
+        }
+        .tuich{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: -40px;
+            top: 160px;
+        }
+        
     }
  
     @media (min-width: 1280px) {
-      .container {
-        max-width: 1280px;
-      }
-      .bg-hello{          
-        margin-left: 250px;
+        .container {
+            max-width: 1280px;
+        }
+        .bg-hello{          
+            margin-left: 250px;
             margin-top: 110px;
-    }
+        }
+        .henry {
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 170px;
+            top: 0;
+        }
+        .youtube{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 110px;
+            top: 80px;
+        }
+        .tuich{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 65px;
+            top: 160px;
+        }
+        
+        
     }
     
   
     @media (min-width: 1536px) {
-      .container {
-        max-width: 1300px;
+        .container {
+            max-width: 1300px;
       }
-      .bg-hello{          
-        margin-left: 600px;
-        margin-top: 100px;
-    }
+        .bg-hello{          
+            margin-left: 600px;
+            margin-top: 100px;
+        }
+        .henry {
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 170px;
+            top: 0;
+        }
+        .youtube{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 110px;
+            top: 80px;
+        }
+        .tuich{
+            position: absolute;
+            width: 250px;
+            height: 100px;
+            right: 65px;
+            top: 160px;
+        }
+
     }
 

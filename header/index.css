@@ -234,9 +234,9 @@
         }
     }
 
-    @media (min-width: 1024px){
+    @media (min-width: 1025px){
         .container {
-            max-width: 1024px;
+            max-width: 1024px;     
           }
         .header {
             padding-left: 60px;
@@ -293,6 +293,18 @@
             height: 100px;
             right: -40px;
             top: 160px;
+        }
+        
+        .dk-hero-hidden{
+            display: block;
+        }
+        .bk-bash{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            
         }
         
     }

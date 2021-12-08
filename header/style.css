@@ -91,9 +91,9 @@
             align-items: center;
             ;
         }
-        .h-img-logo {
+        /* .h-img-logo {
             height: 32px;
-        }        
+        }         */
         .nav-hidden {
             display: none;
         }
@@ -320,6 +320,7 @@
             left: 60px;
             bottom: 60px;
             z-index: 2;
+            width: 50px;
             }
         
     }
@@ -544,7 +545,7 @@ background: linear-gradient( 85deg,#434343,#262626);
     box-shadow: 0 0 27px 0px rgba(0, 0, 0, 0.7);
 }
 
-img {
+.img-p {
     display: block;
     max-width: 100%;
     border-style: none;

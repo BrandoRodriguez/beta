@@ -91,9 +91,9 @@
             align-items: center;
             ;
         }
-        /* .h-img-logo {
+        .h-img-logo {
             height: 32px;
-        }         */
+        }        
         .nav-hidden {
             display: none;
         }
@@ -155,7 +155,10 @@
             }
         .social-icon li a svg {
             width: 15px;
-            }      
+            }   
+        .img-brands{
+            width: 100px;
+        }   
         
 /* <!-- ======================================= 
 ==CSS Standar==  

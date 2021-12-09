@@ -151,10 +151,13 @@
         .social-icon li a svg {
             width: 15px;
             }  
-            .henry {
+        .henry {
                 border-bottom: 1px solid #5c5b5b;
                 padding-bottom: 15px;
-            } 
+        } 
+        .pd-info{
+            padding: 0 0 0 10px;
+        }
         
 /* <!-- ======================================= 
 ==CSS Standar==  
@@ -246,6 +249,9 @@
             align-items: center;
             justify-content: center;
             
+        }
+        .hidden {
+            display: none;
         }
     }
 

@@ -101,6 +101,7 @@
         .dk-hero-hidden{
             display: none;
         }
+       
         .btn {
             padding-top: 9px;
             padding-bottom: 9px;
@@ -163,7 +164,7 @@
         }
         
 /* <!-- ======================================= 
-==CSS Standar==  
+==CSS General==  
 =======================================--> */
         .flex {
             display: flex;

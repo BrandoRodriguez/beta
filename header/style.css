@@ -89,6 +89,7 @@
             padding-bottom: 15px;
             justify-content: space-between;
             align-items: center;
+            box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
             ;
         }
         .h-img-logo {
@@ -265,6 +266,7 @@
             padding-right: 60px;
             padding-top: 40px;
             padding-bottom: 0px;
+            box-shadow: none;
         }
         .h-img-logo {
             height: 40px;
@@ -342,6 +344,13 @@
             top: 0;
             border-bottom: none;
             padding-bottom:0;
+            background-color:rgba(128,128,128,.2);
+            padding: 0 5px;
+        }
+        .henry:hover{
+            animation: bg-fade-in .2s ease-out forwards;
+background-color: 
+#2e2e2e;
         }
         .youtube{
             position: absolute;
@@ -372,10 +381,13 @@
         }
         .henry {
             position: absolute;
-            width: 350px;
-            height: 100px;
+            width: 355px;
+            height: 70px;
             right: 170px;
             top: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 0 5px;
         }
         .youtube{
             position: absolute;

@@ -85,8 +85,8 @@
             display: flex;
             padding-left: 15px;
             padding-right: 15px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             justify-content: space-between;
             align-items: center;
             box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
@@ -102,16 +102,17 @@
             display: none;
         }
         .btn {
-            padding-top: 14px;
-            padding-bottom: 14px;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 20px;
+            padding-right: 20px;
             --border-opacity: 1;
             border-color: rgba(168, 168, 170, var(--border-opacity));
             border-radius: 9999px;
             border-width: 1px;
             border-style: solid;
         }
+        
         .btn:hover {
             border-color: #fff;
         }
@@ -267,6 +268,17 @@
             padding-top: 40px;
             padding-bottom: 0px;
             box-shadow: none;
+        }
+        .btn {
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 30px;
+            padding-right: 30px;
+            --border-opacity: 1;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-radius: 9999px;
+            border-width: 1px;
+            border-style: solid;
         }
         .h-img-logo {
             height: 40px;

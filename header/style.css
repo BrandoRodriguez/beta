@@ -208,8 +208,9 @@
             height: 100%;
         }
         .marge-prueba {
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
         }
         .space> :not([hidden])~ :not([hidden]) {
             --tw-space-x-reverse: 0;
@@ -337,7 +338,12 @@
             bottom: 60px;
             z-index: 2;
             width: 50px;
-            }
+        }
+        .marge-prueba {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+        }
         
     }
  

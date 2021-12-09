@@ -111,8 +111,11 @@
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.mg-bash{
-    margin: 10px 0 10px 0;
+.pd-mb-top{
+    margin-top: 15px;
+}
+.pd-mb-bottom{
+    margin-bottom: 15px;
 }
 
 /* <!-- ======================================= 
@@ -238,7 +241,6 @@
             line-height: 44px;
         }
         .portfolio-type {
-            font-size: 13px;
             letter-spacing:1px;
             color: #D1AC90;
         }
